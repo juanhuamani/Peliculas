@@ -65,8 +65,6 @@ app.post('/movies', (req, res) => {
   res.status(201).json(newMovie)
 })
 
-app.get()
-
 app.patch('/movies/:id', (req, res) => {
   const result = validatePartialMovie(req.body)
 

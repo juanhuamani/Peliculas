@@ -65,6 +65,8 @@ app.post('/movies', (req, res) => {
   res.status(201).json(newMovie)
 })
 
+app.get()
+
 app.patch('/movies/:id', (req, res) => {
   const result = validatePartialMovie(req.body)
 
@@ -91,7 +93,7 @@ app.patch('/movies/:id', (req, res) => {
 
 const PORT = process.env.PORT ?? 1234
 
-    
+
 app.listen(PORT, () => {
   console.log(`server listening on port http://localhost:${PORT}`)
 })
